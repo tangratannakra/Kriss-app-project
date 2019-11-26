@@ -1,0 +1,345 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  background: #85bac9;
+  background: -webkit-gradient(linear, left bottom, left top, from(#85bac9), to(#3e68a6));
+  background: linear-gradient(360deg, #85bac9 0%, #3e68a6 100%);
+  background-color: var(--dark-blue);
+  height: 100vh;
+}
+
+#wrapper {
+  background-color: whitesmoke;
+  width: 360px;
+  height: 640px;
+  border-radius: 5px;
+  position: relative;
+}
+
+header {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  color: var(--dark-blue);
+}
+
+header h1 a {
+  text-decoration: none;
+}
+
+header .svg-inline--fa {
+  font-size: 1.3rem;
+  margin: 0px 5px;
+  color: var(--dark-blue);
+}
+
+#main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-header h1.page-title {
+  margin-left: 3px;
+}
+
+#user-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#user-thumb {
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+}
+
+#user-thumb:hover {
+  cursor: pointer;
+}
+
+#user-thumb img {
+  height: auto;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#app-body {
+  min-height: 90%;
+}
+
+ul.app-main-menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+ul.app-main-menu li {
+  background-color: var(--light-blue);
+  height: 100%;
+  margin: 3px 0px;
+  border-bottom: 2px solid #85bac9;
+}
+
+ul.app-main-menu li .svg-inline--fa {
+  font-size: 1.3rem !important;
+}
+
+ul.app-main-menu li a {
+  padding: 20px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--purple);
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul.app-main-menu li:hover {
+  background-color: var(--purple);
+  cursor: pointer;
+}
+
+ul.app-main-menu > li.active > ul > li {
+  border: none;
+}
+
+ul.app-main-menu li:hover a,
+ul.app-main-menu > li.active a {
+  color: var(--light-blue);
+}
+
+ul.app-main-menu > li > ul {
+  list-style: none;
+}
+
+ul.app-main-menu > li.active {
+  background-color: var(--purple);
+  color: var(--light-blue);
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+ul.app-main-menu > li.active > ul > li {
+  background-color: var(--light-purple);
+  padding: 20px 20px 20px 40px;
+}
+
+ul.timeline {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: auto;
+  background-color: white;
+}
+
+ul.timeline h1 {
+  background-color: var(--light-blue);
+  color: var(--purple);
+  padding: 10px 20px;
+  font-size: 0.8rem;
+}
+
+ul.timeline ul.article {
+  list-style: none;
+  border-bottom: 1px solid var(--light-blue);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+ul.timeline ul.article li {
+  padding: 10px 0px;
+}
+
+ul.timeline ul.article li.article-title {
+  font-size: 1.2 rem;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+ul.timeline ul.article li.article-description {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+ul.timeline ul.article li.article-img img {
+  width: 100%;
+  height: auto;
+}
+
+ul.timeline ul.article li.article-meta {
+  font-size: 0.8rem;
+}
+
+ul.timeline ul.article li.article-meta span {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+ul.timeline ul.article li.article-actions {
+  font-size: 0.8rem;
+  padding-left: 20px;
+  margin: 0px -20px;
+}
+
+ul.timeline ul.article li.article-actions .svg-inline--fa {
+  color: var(--purple);
+}
+
+footer {
+  font-size: 0.7rem;
+  position: relative;
+  top: -50px;
+  height: 50px;
+  padding: 5px;
+}
+
+/*---- My-Topics ----*/
+.main-topic {
+  height: 100%;
+  background-color: var(--light-blue);
+  height: 100%;
+  margin: 3px 0px;
+  border-bottom: 2px solid #85bac9;
+  padding: 20px 20px;
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.main-topic h2 {
+  font-size: 1.1rem;
+}
+
+.main-topic .svg-inline--fa {
+  font-size: 1.3rem !important;
+}
+
+.active {
+  background-color: var(--purple);
+  color: var(--light-blue);
+  cursor: pointer;
+  border: none;
+}
+
+.active h3 {
+  color: var(--light-blue);
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.active .sub-topic {
+  border-bottom: 1px solid var(--light-blue);
+  padding-bottom: 10px;
+}
+
+.active .sub-topic:first-child {
+  padding-top: 10px;
+}
+
+.active .sub-topic:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: -10px;
+}
+
+/*---- User Account ----*/
+#user-profile-description {
+  background-color: var(--dark-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+#user-profile-description h1 {
+  font-size: 1.4rem;
+}
+
+#user-thumb-big {
+  margin: 20px 10px 10px 10px;
+  width: 170px;
+  height: 170px;
+}
+
+#user-thumb-big img {
+  border: 5px solid white;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#user-details {
+  margin: 10px 20px 20px;
+}
+
+/* Color Sceme */
+:root {
+  --light-blue: #9ad2e3;
+  --dark-blue: #2e4d7a;
+  --purple: #4f133d;
+  --light-purple: #6e2658;
+  --orange: #ec432e;
+  --yellow: #f6b75a;
+  --green: #d0e78f;
+  --light-green: #f1ffcb;
+}
+/*# sourceMappingURL=style.css.map */
